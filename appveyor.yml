@@ -3,6 +3,8 @@
 #---------------------------------# 
 version: 1.0.{build}
 os: WMF 5
+build: off
+
 install:
   - ps: . .\build.ps1
 
