@@ -1,5 +1,10 @@
+#---------------------------------# 
+#      environment configuration  # 
+#---------------------------------# 
+version: 1.0.{build}
+os: WMF 5
 install:
-  - ps: |
-      Get-Childitem C:\Libraries\boost_1_69_0 -Recurse -Force | Foreach-Object {
-        Write-Host $_.FullName
-      }
+  - ps: . .\AppVeyor\build.ps1
+
+build_script: 
+  - ps: . .\AppVeyor\build.ps1
