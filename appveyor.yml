@@ -1,0 +1,2 @@
+before_build:
+  - ps: .\tools\appveyor\build.ps1
