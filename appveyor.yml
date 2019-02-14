@@ -1,10 +1,4 @@
 build: off
 
-install:
-  - ps: . .\build.ps1
-
 build_script: 
-  - ps: . .\build.ps1
-
-test_script: 
   - ps: . .\build.ps1
