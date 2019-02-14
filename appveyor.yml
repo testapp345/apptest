@@ -1,2 +1,5 @@
-before_build:
-  - ps: .\tools\appveyor\build.ps1
+install:
+  - ps: |
+      Get-Childitem C:\Libraries\boost_1_69_0 -Recurse -Force | Foreach-Object {
+        Write-Host $_.FullName
+      }
