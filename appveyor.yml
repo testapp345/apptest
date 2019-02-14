@@ -4,7 +4,7 @@
 version: 1.0.{build}
 os: WMF 5
 install:
-  - ps: . .\AppVeyor\build.ps1
+  - ps: . .\build.ps1
 
 build_script: 
-  - ps: . .\AppVeyor\build.ps1
+  - ps: . .\build.ps1
